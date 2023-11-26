@@ -1,0 +1,101 @@
+body {
+    font-family: 'Playball', sans-serif;
+}
+
+h1 {
+    display: inline-block;
+    margin: 0 32px 0 0;
+}
+
+.links {
+    display: inline-block;
+}
+
+.links li {
+    display: inline-block;
+}
+
+.links a {
+    font-family: 'Parisienne', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.links ul {
+    padding: 0;
+}
+
+.navbar {
+    margin: 32px;
+}
+
+a.active {
+    border-bottom: 2px solid black;
+}
+
+a.active:hover {
+    color: burlywood;
+}
+
+a.about:hover {
+    color: burlywood;
+}
+
+a.contact:hover{
+    color: burlywood;
+}
+
+.gallery {
+    padding: 20px;
+}
+
+.card {
+    font-family: 'Ms Madi';
+    width: 49.75%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.card img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h2 {
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    font-weight: 300;
+}
+
+.card img:hover {
+    opacity: 0.8;
+}
+
+.about {
+    width: 40%;
+    min-width: 600px;
+    margin: -10px 0 100px 630px;
+}
+
+.about h3 {
+    font-family: 'Unkempt',sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.contact {
+    margin-top: 100px;
+}
+
+.contact p {
+    margin: 0;
+    font-size: 25px;
+}
+
+.cta span {
+    border-bottom: 2px solid black;
+}
