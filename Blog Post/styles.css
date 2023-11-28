@@ -1,0 +1,160 @@
+body {
+    font-family: 'Fira Sans',sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kalam', serif;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 80px;
+    letter-spacing: -1.5px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+    letter-spacing: -0.2px;
+}
+
+h3 {
+    font-size: 38px;
+    letter-spacing: 0;
+}
+
+h4 {
+    font-size: 30px;
+    letter-spacing: 0.25px;
+}
+
+h5 {
+    font-size: 24px;
+    letter-spacing: 0.25px;
+}
+
+h6 {
+    font-size: 20px;
+    letter-spacing: 0.25px;
+    margin: 0;
+}
+
+code {
+    color: #e95400;
+    font-weight: bold;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.content h3 {
+    text-transform: capitalize;
+}
+
+.herobg {
+    background-image: url("https://images.unsplash.com/photo-1525338078858-d762b5e32f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 100vh;
+    filter: blur(15px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1, .hero p {
+    width: 75%;
+    max-width: 900px;
+    margin: 16px 0;
+}
+
+.info {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Kalam', serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.info span {
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1.5px;
+}
+
+.headline {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0px;
+    margin: 40px 0;
+    font-size: 18px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 16px;
+    border-left: 2px solid violet;
+    padding-left: 20px;
+    margin: 32px 0 32px 32px;
+}
+
+.quote cite {
+    display: block;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+footer {
+    background-color: #863ae8;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer ul li {
+    display: inline;
+    padding: 0 16px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
