@@ -1,0 +1,255 @@
+body {
+    background-color: #b566ff;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+h1 {
+    color: whitesmoke;
+    margin: 32px 0 64px 0;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 64px 64px 64px;
+    position: relative;
+}
+
+.tabs {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 32px 0;
+    padding: 16px;
+}
+
+.tabs p {
+    padding: 8px;
+}
+
+.tabs p:hover {
+    color: #e62e00;
+    cursor: pointer;
+}
+
+.tabs p.active {
+    color: #e62e00;
+    position: relative;
+}
+
+.line {
+    height: 5px;
+    width: 100%;
+    top: 95px;
+    position: absolute;
+    background-color: lightgrey;
+}
+
+.tabs .active::before {
+    content: "";
+    width: 200%;
+    height: 5px;
+    background-color: purple;
+    position: absolute;
+    bottom: -30px;
+    left: -50%;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.toggle-wrapper {
+    display: flex;
+}
+
+.toggle-wrapper img {
+    height: 50px;
+    margin:  0 16px;
+}
+
+.toggle {
+    background-color: #e62e00;
+    height: 35px;
+    width: 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 4px 0 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.toggle span:first-of-type {
+    color: white;
+}
+
+.toggle span:last-of-type {
+    background-color: white;
+    color: #e62e00;
+    padding: 4px 16px;
+    border-radius: 20px;
+}
+
+.sessions-card {
+    background-color: #e6ccff;
+    text-align: center;
+    padding: 32px;
+    width: 50%;
+    text-transform: uppercase;
+    margin: 16px 0;
+    border-radius: 13px;
+}
+
+.sessions-card p {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 16px 0 0 0;
+}
+
+.sessions-card .number {
+    color: purple;
+    font-size: 54px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.description {
+    line-height: 32px;
+    margin: 16px 0 32px 0;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.slider .bar {
+    width: 100%;
+    height: 16px;
+    background-color: #e6ccff;
+    border: 1px solid rgb(210,210,210);
+    border-radius: 20px;
+}
+
+.slider .progress {
+    width: 35%;
+    height: 16px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(53,10,74,1) 36%, rgba(83,49,156,1) 100%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider .point {
+    height: 20px;
+    width: 24px;
+    background-color: purple;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: 34%;
+    border: 2px solid white;
+    transition: 0.15s transform ease;
+}
+
+.slider .point:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+.slider .scale ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(166, 166, 166);
+} 
+
+.card-wrapper {
+    display: flex;
+}
+
+.card {
+    background-color: #e62e00;
+    border-radius: 10px;
+    margin: 16px;
+    padding: 16px 32px;
+    box-shadow: 0px 3px 11px 1px rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: bold;
+    transition: 0.15s transform ease;
+    color: white;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card .top-section {
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.card .top-section p {
+    margin: 4px 0;
+}
+
+.card .price {
+    font-size: 42px;
+    color: #white;
+}
+
+.card hr {
+    width: 30%;
+    border: 1px solid rgb(210,210,210);
+    border-radius: 2px;
+}
+
+.card button {
+    border: none;
+    color: white;
+    background-color: #b566ff;
+    padding: 16px;
+    border-radius: 10px;
+    transition: 0.15s transform ease;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.card button:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
+.card .save-header {
+    color: white;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(53,10,74,1) 36%, rgba(83,49,156,1) 100%);
+    position: absolute;
+    top: -24px;
+    left: 0;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
